@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%2214%22%20fill%3D%22%230234a7%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20font-size%3D%2212%22%20font-weight%3D%22bold%22%20fill%3D%22white%22%3ESID%3C%2Ftext%3E%3C%2Fsvg%3E">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="/styles.css">
 </head>
 
@@ -16,12 +16,21 @@
             <a href="/" class="logo-text">SID</a>
         </div>
         <nav class="navbar">
-            <ul>
+            <ul class="navbar-list">
                 <li class="list-item"><a href="/">HOME</a></li>
                 <li class="list-item"><a href="#projects">PROJECTS</a></li>
                 <li class="list-item"><a href="#contact">CONTACT</a></li>
             </ul>
+            <div class="toggle_btn"><i class="fa-solid fa-bars"></i></div>
         </nav>
+        <div class="mobile-nav">
+
+            <ul class="navbar-list">
+                <li class="list-item"><a href="/">HOME</a></li>
+                <li class="list-item"><a href="#projects">PROJECTS</a></li>
+                <li class="list-item"><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
     </header>
 
 
@@ -57,12 +66,33 @@
     </div>
 
 
+    <section id="projects" class="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="project">
+            <img src="/assets/images/Screenshot (1436).png" alt="Chrome extension">
+            <h3>Image Resize Chrome Extension</h3>
+            <p>Upload an image of your choice. Resize the image to your req pixel size while maintaining the aspect ratio. Preview the resized image before downloading. Select the type of file you want to download between JPEG and PNG image formats. Download
+                the resized image directly to your device.</p>
+            <a href="https://github.com/siddhant7701/Resize_pic_chrome_extension" class="btn">Souce Code</a>
+            <a href="https://resize-pic-chrome-extension.vercel.app/" class="btn">Go Live</a>
+
+        </div>
+        <div class="project">
+            <img src="path/to/project2-image.jpg" alt="Project 2">
+            <h3>Dynamic Website for Basic Company Needs
+            </h3>
+            <p> Developed a dynamic website using Express.js and EJS for showcasing company products and services. Features responsive navigation, home page, contact page, and about page for user engagement. Includes interactive boxes, external site links,and
+                a contact form to enhance user experience.
+            </p>
+            <a href="project2-details.html" class="btn">Learn More</a>
+        </div>
+
+        <a id="backToTopBtn" href="#">^</a>
 
 
-    <a id="backToTopBtn" href="#">^</a>
+        <script src="/script.js"></script>
 
 
-    <script src="/script.js"></script>
 </body>
 
 </html>
