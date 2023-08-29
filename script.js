@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const navbar = document.querySelector(".navbar");
     const mobileNav = document.querySelector('.mobile-nav');
     const toggleBtn = document.querySelector('.toggle_btn');
+    const icon = toggleBtn.querySelector('i');
 
     backToTopBtn.style.display = "none";
 
@@ -23,23 +24,41 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    toggleBtn.onclick = function() {
+    toggleBtn.addEventListener('click', function() {
         mobileNav.classList.toggle('open');
         toggleBtn.classList.toggle('opened');
-    };
-    const icon = toggleBtn.querySelector('i');
-    if (toggleBtn.classList.contains('opened')) {
-        icon.classList.remove('fa-bars');
-        icon.classList.add('fa-times');
-    } else {
-        icon.classList.remove('fa-times');
-        icon.classList.add('fa-bars');
-    }
+
+        if (toggleBtn.classList.contains('opened')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+        } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    });
+
     // Close mobile navigation when clicking outside of it
     document.addEventListener('click', function(event) {
         if (!mobileNav.contains(event.target) && !toggleBtn.contains(event.target)) {
             mobileNav.classList.remove('open');
             toggleBtn.classList.remove('opened');
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
         }
+    });
+
+    // Smooth scrolling for navigation links (except HOME)
+    const navLinks = document.querySelectorAll('.navbar-list a:not([href="/"])');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const target = document.querySelector(link.getAttribute('href'));
+            if (target) {
+                window.scrollTo({
+                    top: target.offsetTop,
+                    behavior: "smooth"
+                });
+            }
+        });
     });
 });
