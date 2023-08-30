@@ -277,7 +277,7 @@ header {
 
 .btn:hover {
     color: #151515;
-    background-color: #c6c6c6;
+    background-color: #e4e4e4;
 }
 
 @media (max-width: 767px) {
@@ -412,7 +412,7 @@ header {
     transform: translateY(-5px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: #151515;
-    background-color: #c6c6c6;
+    background-color: #e4e4e4;
 }
 
 .contact h2 {
