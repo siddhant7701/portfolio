@@ -276,7 +276,8 @@ header {
 }
 
 .btn:hover {
-    background-color: #333;
+    color: #151515;
+    background-color: #c6c6c6;
 }
 
 @media (max-width: 767px) {
@@ -332,4 +333,120 @@ header {
     .navbar .list-item {
         display: none;
     }
+    /* Contact section styling for mobile */
+    .contact {
+        padding: 20px 0;
+    }
+    .contact h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    /* Contact info styling for mobile */
+    .content-container {
+        padding: 20px 0;
+    }
+    .contact-info {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .contact-box {
+        padding: 10px;
+        font-size: 16px;
+    }
+    .contact h2 {
+        font-size: 20px;
+    }
+    /* Social links styling for mobile */
+    .social-icon {
+        margin: 0 5px;
+    }
+    .social-icon a img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+/* Contact section styling */
+
+.contact {
+    background-color: #f7f7f7;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+
+/* Contact info styling */
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.contact-box {
+    background-color: rgba(100, 200, 200, 1);
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+    text-decoration: none;
+}
+
+.contact-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #151515;
+    background-color: #c6c6c6;
+}
+
+.contact h2 {
+    color: rgba(100, 200, 200, 1);
+    margin-bottom: 10px;
+}
+
+
+/* Social links styling */
+
+.social-links {
+    display: flex;
+}
+
+.social-icon {
+    margin: 0 10px;
+}
+
+.social-icon a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s;
+}
+
+.social-icon a img:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: flex;
+    bottom: 0;
+    width: 100%;
 }
