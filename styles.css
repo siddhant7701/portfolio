@@ -398,6 +398,7 @@ header {
     border: 1px solid #ddd;
     border-radius: 20px;
     padding: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
@@ -460,8 +461,8 @@ footer {
     color: white;
     text-align: center;
     padding: 5px 0;
-    margin-bottom: 0%;
+    margin-bottom: 0;
     margin-top: 5%;
     width: 100%;
-    bottom: 0%;
+    bottom: 0;
 }
