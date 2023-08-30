@@ -261,7 +261,6 @@ header {
 
 .project p {
     font-size: 16px;
-    color: #666;
     margin-bottom: 20px;
 }
 
@@ -387,6 +386,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 40px 0;
+    background-color: white;
 }
 
 .contact-info {
@@ -405,6 +405,7 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
     text-align: center;
+    color: #333;
     text-decoration: none;
 }
 
@@ -439,6 +440,22 @@ header {
 
 .social-icon a img:hover {
     transform: scale(1.2);
+}
+
+.get-in-touch {
+    background-color: #f7f7f7;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.get-in-touch h2 {
+    color: rgba(100, 200, 200, 1);
+    margin-bottom: 10px;
+}
+
+.get-in-touch p {
+    font-size: 18px;
+    margin-bottom: 30px;
 }
 
 footer {
