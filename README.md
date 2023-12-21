@@ -9,7 +9,6 @@ Welcome to my portfolio website! This project serves as a showcase of my skills,
 - [Contact](#contact)
 - [Get in Touch](#get-in-touch)
 - [Back to Top](#back-to-top)
-- [License](#license)
 
 ## About Me
 
